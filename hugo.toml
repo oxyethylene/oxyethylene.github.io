@@ -1,0 +1,4 @@
+baseURL = 'https://blog.kudlife.fun/'
+languageCode = 'zh-cn'
+title = 'kudlife的笔记'
+theme = 'ananke'

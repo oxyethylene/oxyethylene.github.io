@@ -1,0 +1,6 @@
+# hugo generated files
+public
+resources
+
+# MacOS files
+.DS_Store
