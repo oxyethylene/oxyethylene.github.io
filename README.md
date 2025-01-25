@@ -1,3 +1,3 @@
 # oxyethylene.github.io
 
-visit through [blog.kudlife.fun](https://blog.kudlife.fun)
+visit through [blog.oxyethylene.win](https://blog.kudlife.fun)
