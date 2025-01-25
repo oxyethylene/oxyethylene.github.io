@@ -11,4 +11,3 @@ draft = false
 站点生成器[Hugo](https://gohugo.io)
 
 主题：[ananke](github.com/theNewDynamic/gohugo-theme-ananke)
-
