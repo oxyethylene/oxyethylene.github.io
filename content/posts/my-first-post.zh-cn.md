@@ -1,10 +1,10 @@
 +++
-title = 'My First Post'
+title = '关于这个博客'
 date = 2024-03-22T21:34:16+08:00
 draft = false
 +++
 
-## Introduction
+## 介绍
 
 使用[github pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages)托管
 

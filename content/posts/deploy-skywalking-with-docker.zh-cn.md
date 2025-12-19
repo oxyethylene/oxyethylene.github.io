@@ -2,6 +2,7 @@
 title = '使用Docker部署SkyWakling'
 date = 2025-01-25T15:18:58+08:00
 draft = false
+tags = ["docker", "skywalking", "apm"]
 +++
 
 目标：基于docker和docker compose，部署一个单点的ES + OAP server + UI，接入java agent

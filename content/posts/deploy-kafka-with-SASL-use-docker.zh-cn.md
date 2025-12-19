@@ -2,6 +2,7 @@
 title = '使用Docker部署带鉴权的kafka'
 date = 2025-01-30T18:00:41+08:00
 draft = false
+tags = ["docker", "kafka"]
 +++
 
 目标：基于docker和docker compose，部署一个单点的Kafka，开启SASL鉴权
