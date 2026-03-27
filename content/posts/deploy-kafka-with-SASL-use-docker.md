@@ -1,29 +1,29 @@
 +++
-title = '使用Docker部署带鉴权的kafka'
+title = 'Deploy Kafka with SASL authentication using Docker'
 date = 2025-01-30T18:00:41+08:00
 draft = false
 tags = ["docker", "kafka"]
 +++
 
-目标：基于docker和docker compose，部署一个单点的Kafka，开启SASL鉴权
+Objective: Deploy a single-point Kafka with SASL authentication enabled based on Docker and Docker Compose
 
-## ⚠️ 重要警告
+## ⚠️ Important Warning
 
-**从2025年8月28日起，Bitnami已存档其在Docker Hub上的OCI镜像仓库（docker.io/bitnami）。** 本文使用的`bitnami/kafka:3.9.0`镜像不再可用。
+**Starting August 28, 2025, Bitnami has archived its OCI image registry on Docker Hub (docker.io/bitnami).** The `bitnami/kafka:3.9.0` image used in this article is no longer available.
 
-如需继续使用Bitnami镜像，请考虑以下方案：
-1. **Bitnami Secure Images (BSI)** - 推荐方案，提供更安全、硬化的镜像，但需商业订阅
-2. **Bitnami Legacy Registry** - 临时方案，包含旧版镜像但无安全补丁，需手动切换源
+If you continue to use Bitnami images, please consider the following options:
+1. **Bitnami Secure Images (BSI)** - Recommended approach, providing more secure and hardened images, but requires commercial subscription
+2. **Bitnami Legacy Registry** - Temporary solution, contains legacy images but without security patches, requires manual source switching
 
-关于详细的迁移信息，请参见[官方公告](https://community.broadcom.com/tanzu/blogs/beltran-rueda-borrego/2025/08/18/how-to-prepare-for-the-bitnami-changes-coming-soon)。
+For detailed migration information, please refer to the [official announcement](https://community.broadcom.com/tanzu/blogs/beltran-rueda-borrego/2025/08/18/how-to-prepare-for-the-bitnami-changes-coming-soon).
 
-## 使用版本
+## Versions Used
 
-- 主机: Mac Studio (Apple M1 Max)
+- Host: Mac Studio (Apple M1 Max)
 
-- 操作系统: MacOS 15.2 (24C101)
+- Operating System: MacOS 15.2 (24C101)
 
-- OrbStack (提供容器环境): 1.9.4
+- OrbStack (Container Environment): 1.9.4
 
 - Docker:
     ```
@@ -62,9 +62,9 @@ tags = ["docker", "kafka"]
     Docker Compose version 083f676
     ```
 
-- kafka镜像: bitnami/kafka:3.9.0
+- Kafka image: bitnami/kafka:3.9.0
 
-## 创建`docker-compose.yaml`文件
+## Creating the `docker-compose.yaml` File
 
 ```yaml
 services:
@@ -120,4 +120,4 @@ services:
       - KAFKA_CFG_SUPER_USERS=User:admin;User:controller_user;User:broker_user
 ```
 
-`docker compose -f docker-compose.yaml up -d`即可启动
+Run `docker compose -f docker-compose.yaml up -d` to start the service.
