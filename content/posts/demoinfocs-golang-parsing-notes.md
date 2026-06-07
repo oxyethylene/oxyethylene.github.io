@@ -6,11 +6,6 @@ tags = ["counter-strike", "demo", "demoinfocs", "golang", "protobuf", "cs-tech"]
 series = ["CS Demo Tech Notes"]
 +++
 
-Sources summarized:
-
-- `docs/how-dem-parsing-works.html` (my research note, not an upstream demoinfocs-golang doc)
-- `docs/game-events.md` (from the upstream repo)
-
 ## 1) File Shape
 
 A CS2 demo starts with `PBDEMS2` then continues as a frame stream.
